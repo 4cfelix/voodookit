@@ -1,0 +1,370 @@
+/* Start mixins.less */
+/* -------------------------------------------------------------------- */
+
+
+// Hide Something
+//--------------------------------------------------------------------
+
+.hidden {
+	display: none
+}
+
+.no-text {
+	text-indent: -9999px;
+	display: inline-block;
+	*display: inline;
+}
+
+
+// Alignment
+//--------------------------------------------------------------------
+
+.center() {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+.fix {
+	*zoom: 1;
+	
+	&:before, &:after {
+		display: table;
+		content: "";
+	}
+	
+	&:after {
+		clear: both;
+	}
+}
+
+.wrap {
+	.fix;
+	.center();
+	position: relative;
+	max-width: 980px;
+	
+	.ie6 & {
+		width: 64em;
+	}
+}
+
+
+// ----------------------------------------------------------------------------------------
+
+
+// Units
+.font-size( @target: @basicFontSize, @context: 16 ) {
+    font-size: ( @target / @context ) + 0em;
+}
+
+
+// ----------------------------------------------------------------------------------------
+
+
+// Nav Class - removes default list values
+.nav {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	
+	li:before {
+		display: none !important;
+	}
+}
+
+
+// ----------------------------------------------------------------------------------------
+
+// Selection Styling
+.selection(@bg: @red, @color: #fff) {
+
+	::-webkit-selection {
+		background: @bg;
+		color: @color;
+	}
+	
+	::-moz-selection {
+		background: @bg;
+		color: @color;
+	}
+	
+	::selection {
+		background: @bg;
+		color: @color;
+	}
+}
+
+
+// ----------------------------------------------------------------------------------------
+
+
+// Icons
+.icon-before(@x: 0, @y: 0, @w: 14px, @h: 16px) {
+	
+	&:before {
+		content: "";
+		vertical-align: text-top;
+		line-height: 14px;
+		width: @w;
+		height: @h;
+		background-repeat: no-repeat;
+		background-position: -@x -@y;
+		.inline-block();
+		margin-right: 5px;
+	}
+}
+
+.icon-after(@x: 0, @y: 0, @w: 14px, @h: 14px, @t: 0, @l: 0) {
+	
+	&:after {
+		content: "";
+		vertical-align: text-top;
+		line-height: 14px;
+		width: @w;
+		height: @h;
+		background-repeat: no-repeat;
+		background-position: -@x -@y;
+		.inline-block();
+		margin-right: 5px;
+		position: absolute;
+		top: @t;
+		left: @l;
+	}
+}
+
+
+// ----------------------------------------------------------------------------------------
+
+
+// List Item Style
+.disc-list(@y: 0, @x: -57, @w: 14px, @h: 14px) {
+	position: absolute;
+	left: -1.5em;
+	top: .5em;
+	content: "";
+	background-position: -@y -@x;
+	width: @w;
+	height: @h; 
+	}
+
+
+// ----------------------------------------------------------------------------------------
+
+
+// Contentbereich Links + Icons
+.icon-arrow {
+	.icon-before(0, 94px);
+}
+
+
+// ----------------------------------------------------------------------------------------
+
+
+// InlineBlock
+.inline-block() {
+	display: inline-block;
+	*display: inline; // IE7 inline-block hack
+	*zoom: 1;
+}
+
+
+// ----------------------------------------------------------------------------------------
+
+
+// Internet Explorer
+.reset-filter() {
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+
+// ----------------------------------------------------------------------------------------
+
+
+// The Grid
+.col {
+     -webkit-box-sizing:border-box;
+     -moz-box-sizing:border-box;
+     box-sizing:border-box;
+     -moz-background-clip:padding-box !important;
+     -webkit-background-clip:padding-box !important;
+     background-clip:padding-box !important;
+}
+
+.makeRow(@gutter) {
+  margin-left: @gutter * -1;
+  .fix;
+}
+
+.makeCol(@num, @gutter, @max_columns) {
+	@one_col: (100% - (@gutter * (@max_columns - 1))) / @max_columns;
+	width: (@one_col * @num) + (@gutte * (@num - 1));
+	margin-left: @gutter / 2;
+	margin-right: @gutter / 2;
+	padding: @gutter;
+}
+
+
+// ----------------------------------------------------------------------------------------
+
+
+// CSS3
+.border-radius( @radius: 10px ) {
+	-webkit-border-radius: @radius;
+	   -moz-border-radius: @radius;
+	        border-radius: @radius;		
+}
+
+.box-shadow(@shadow: 0px 2px 3px 0px rgba(0, 0, 0, .4)) {
+  -webkit-box-shadow: @shadow;
+     -moz-box-shadow: @shadow;
+          box-shadow: @shadow;
+}
+
+.inset-box-shadow( 
+	@x : 1px, 
+	@y : -5px, 
+	@blur : 4px, 
+	@spread : 0, 
+	@color : rgba(0,0,0,.3) 
+) {
+	-webkit-box-shadow: inset @x @y @blur @spread @color;
+	   -moz-box-shadow: inset @x @y @blur @spread @color;	
+			box-shadow: inset @x @y @blur @spread @color;	
+}
+
+.transition(@transition) {
+  -webkit-transition: @transition;
+     -moz-transition: @transition;
+      -ms-transition: @transition;
+       -o-transition: @transition;
+          transition: @transition;
+}
+
+.box-layout(
+	@orient : horizontal,
+	@pack : center,
+	@align : center
+) {
+	display: -webkit-box;
+	   display: -moz-box;	
+	        display: box;
+
+	-webkit-box-orient: @orient;
+	   -moz-box-orient: @orient;
+	   		box-orient: @orient;
+	   		
+	-webkit-box-pack: @pack;
+	   -moz-box-pack: @pack;
+	        box-pack: @pack;		
+	        
+	-webkit-box-align: @align;
+	   -moz-box-align: @align;
+			box-align: @align;		
+}
+
+.flex( @val : 1 ) {
+	-webkit-box-flex: @val;
+	   -moz-box-flex: @val;
+	        box-flex: @val;
+}
+
+.resize( @direction ) {
+	-webkit-resize: @direction;
+	   -moz-resize: @direction;
+	        resize: @direction;
+}
+
+.user-select(@select) {
+  -webkit-user-select: @select;
+     -moz-user-select: @select;
+       -o-user-select: @select;
+          user-select: @select;
+}
+
+.linear-gradient( 
+	@fallColor: black,
+	@begin: black, 
+	@end: white,
+	@switch : 100%
+) {
+	background: @fallColor;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@begin), color-stop(@switch, @end));
+	background-image: -webkit-linear-gradient(top, @begin, @end @switch);
+	background-image: -moz-linear-gradient(top, @begin, @end @switch);
+	background-image: -o-linear-gradient(top, @begin, @end @switch);
+	background-image: -ms-linear-gradient(top, @begin, @end @switch);
+	background-image: linear-gradient(top, @begin, @end @switch);
+	
+	.ie8 & {
+		filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorStr="@begin~", EndColorStr="@end~")";
+		-ms-filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorStr="@begin~", EndColorStr="@end~")";
+		
+	}
+ }
+
+.border-none (@delete : none) {
+	border-top: @delete;
+	border-right: @delete;
+	border-bottom: @delete;
+	border-left: @delete;
+}
+
+// Border
+.border-right-left-bottom (
+	@strength : 5px,
+	@type : solid,
+	@color : @grey
+) {
+	border-left: @strength @type @color;
+	border-bottom: @strength @type @color;
+	border-right: @strength @type @color;
+	}
+
+.text-shadow(@shadow: 0px 1px 1px rgba(0,0,0,.6)) {
+	text-shadow: @shadow;
+}
+
+.box-sizing( @type : border-box ) {
+	-webkit-box-sizing: @type;
+	   -moz-box-sizing: @type;
+	    -ms-box-sizing: @type;
+	        box-sizing: @type;
+	*behavior: url(js/boxsizing.htc);		
+}
+.appearance( @value : none ) {
+	-moz-appearance: @value;	
+	-webkit-appearance: @value;
+	appearance: @value;
+}
+
+.opacity(@op:1) {
+	@opacity: @op * 100;
+	opacity: @op;
+	filter: ~"alpha(opacity=@{opacity})";
+	-ms-filter: ~"alpha(opacity=@{opacity})";
+}
+
+
+// ----------------------------------------------------------------------------------------
+
+
+// Retina Support
+.at2x(@path, @w: auto, @h: auto) {
+  background-image: url(@path);
+  @at2x_path: ~`"@{path}".split('.').slice(0, "@{path}".split('.').length - 1).join(".") + "@2x" + "." + "@{path}".split('.')["@{path}".split('.').length - 1]`;
+
+  @media all and (-webkit-min-device-pixel-ratio : 1.5) {
+    background-image: url(@at2x_path);
+    background-size: @w @h;
+  }
+  
+  @media all and (min--moz-device-pixel-ratio: 1.5),
+         (-o-min-device-pixel-ratio: 3/2),
+         (-webkit-min-device-pixel-ratio: 1.5),
+         (min-resolution: 1.5dppx) { 
+  	background-image: url(@at2x_path);
+  	background-size: @w @h;
+  	}
+}
