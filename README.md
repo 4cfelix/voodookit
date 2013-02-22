@@ -1,9 +1,10 @@
-Starter Pack for HTML, CSS Templates
-================
+# Starter Pack for HTML, CSS Templates
 
 Basic starter package for html, css templates
 
-#0.1
+## Progress
+
+###### 0.1
 
 - add images
 - add folders
