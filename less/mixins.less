@@ -169,6 +169,12 @@
 	*zoom: 1;
 }
 
+// Sizing shortcuts
+.size(@width, @height) {
+	width: @width;
+	height: @height;
+}
+
 
 // ----------------------------------------------------------------------------------------
 
@@ -176,33 +182,6 @@
 // Internet Explorer
 .reset-filter() {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-}
-
-
-// ----------------------------------------------------------------------------------------
-
-
-// The Grid
-.col {
-     -webkit-box-sizing:border-box;
-     -moz-box-sizing:border-box;
-     box-sizing:border-box;
-     -moz-background-clip:padding-box !important;
-     -webkit-background-clip:padding-box !important;
-     background-clip:padding-box !important;
-}
-
-.makeRow(@gutter) {
-  margin-left: @gutter * -1;
-  .fix;
-}
-
-.makeCol(@num, @gutter, @max_columns) {
-	@one_col: (100% - (@gutter * (@max_columns - 1))) / @max_columns;
-	width: (@one_col * @num) + (@gutte * (@num - 1));
-	margin-left: @gutter / 2;
-	margin-right: @gutter / 2;
-	padding: @gutter;
 }
 
 
@@ -290,7 +269,7 @@
 	@switch : 100%
 ) {
 	background: @fallColor;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@begin), color-stop(@switch, @end));
+ 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@begin), color-stop(@switch, @end));
 	background-image: -webkit-linear-gradient(top, @begin, @end @switch);
 	background-image: -moz-linear-gradient(top, @begin, @end @switch);
 	background-image: -o-linear-gradient(top, @begin, @end @switch);
