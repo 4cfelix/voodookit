@@ -1,46 +1,82 @@
 /* Start variables.less */
 /* -------------------------------------------------------------------- */
 
-// Light Grey  
-@light: 			#ededed;
 
-// Standard Text Color
-@dark:				#3e3e3e;
-
-// Link Color, Highlightning
-@red:				#d63035;
-
-// Normales Grau
-@grey:				#d1d1d1;
-
-// Dunkles Grau
-@darkGrey:			#7a7a7a;
-
-// Background Color
-@bgColor:			#f7f8f8;
+//
+// Greyscale
+// ----------------------------------------------------------------------------------------
+@black10:					darken(#fff, 10%);
+@black20:					darken(#fff, 20%);
+@black30:					darken(#fff, 30%);
+@black40:					darken(#fff, 40%);
+@black50:					darken(#fff, 50%);
+@black60:					darken(#fff, 60%);
+@black70:					darken(#fff, 70%);
+@black80:					darken(#fff, 80%);
+@black90:					darken(#fff, 90%);
 
 
+
+//
+// Corporate Identity Colors
 // ----------------------------------------------------------------------------------------
 
+@primeColor:				#8bb8bf; // Prime Brand Color
+@secColor:					#3e3e3e; // Second Brand Color
+@thirdColor:				#454545; // Third Brand Color
 
-@basePadding:		1.5em;
 
 
+//
+// Link Colors
 // ----------------------------------------------------------------------------------------
 
+@linkColor:					@primeColor; // Basic link color
+@linkHover:					lighten(@primeColor, 10%); // Basic link hover color
 
-// Schrifthöhe
-@basicLineHeight:	1.5em;
 
-// Schriftgröße
-@basicFontSize:		15; // Pixel
 
-// Standardschriftart
-@fontNormal:		'Helvetica Neue', Helvetica, Arial, sans serif;
+//
+// Scaffolding
+// ----------------------------------------------------------------------------------------
 
-// Headlines, Big Sized Font
-@fontCond:			'OpenSansCondensedLight', 'Helvetica Neue', Helvetica, Arial, sans serif;
+@bodyBackground:			#fff; // basic background color
+@textColor:					@black80; // basic text color
 
-// Headlines, Bold
-@fontCondBold:		'OpenSansCondensedBold', 'Helvetica Neue', Helvetica, Arial, sans serif;
 
+
+//
+// special colors
+// ----------------------------------------------------------------------------------------
+
+@succesColor:				#d63035; 
+@warningColor:				#d63035;
+@infoColor:					#d63035;
+
+
+
+//
+// Alignment
+// ----------------------------------------------------------------------------------------
+
+@gap:						30px;
+@siteWidth:					960px;
+
+
+
+//
+// Typography
+// ----------------------------------------------------------------------------------------
+
+@fontNormal:				'Helvetica Neue' , Arial, sans serif;
+@fontCond:					'Helvetica Neue' , Arial, sans serif;
+@fontBold:					'Helvetica Neue' , Arial, sans serif;
+@fontItalic:				Times , Arial, sans serif;
+
+@baseLineHeight:			1.4em;
+
+@baseFontSize:				14px;
+@hugeFontSize:				@baseFontSize * 1.55; // ~18px
+@largeFontSize:				@baseFontSize * 1.25; // ~18px
+@smallFontSize:				@baseFontSize * 0.85; // ~12px
+@miniFontSize:				@baseFontSize * 0.75; // ~11px
