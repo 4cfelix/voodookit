@@ -113,6 +113,7 @@ section {
 }
 body {
   line-height: 1;
+  font-size: 16px;
 }
 ol,
 ul {
@@ -145,34 +146,40 @@ table {
 /* Start typography.less */
 /* -------------------------------------------------------------------- */
 h1 {
-  font-size: 2em;
+  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #8bb8bf;
+  color: #259eb1;
   line-height: 1.4em;
 }
 h2 {
-  font-size: 1.875em;
+  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 1.4em;
 }
 h3 {
-  font-size: 1.75em;
+  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.4em;
 }
 h4 {
-  font-size: 1.5em;
+  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.4em;
 }
 h5 {
-  font-size: 1.125em;
+  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 1.4em;
 }
 h6 {
-  font-size: 1em;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.4em;
 }
 a {
   text-decoration: none;
-  color: #8bb8bf;
+  color: #259eb1;
 }
 /* Start navigation.less */
 /* -------------------------------------------------------------------- *//* Start layout.less */
@@ -186,10 +193,24 @@ a {
   margin-top: 30px;
   padding: 30px;
 }
+.fontBox {
+  width: 200px;
+  float: right;
+  background: #999999;
+  padding: 15px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
 body {
   font-family: 'TitilliumRegluar', Arial, sans serif;
   line-height: 1.4em;
   background-color: #e6e6e6;
+  font-size: 16px;
+  font-size: 1rem;
 }
 p {
   margin: 15px 0;

@@ -91,8 +91,11 @@
 // Units
 // ----------------------------------------------------------------------------------------
 
-.font-size( @target: @basicFontSize, @context: 16 ) {
-    font-size: ( @target / @context ) + 0em;
+.fontSize(@sizeValue){
+  @remValue: @sizeValue / @baseFontSize;
+  @pxValue: (@sizeValue);
+  font-size: ~"@{pxValue}px"; 
+  font-size: ~"@{remValue}rem";
 }
 
 
