@@ -4,6 +4,13 @@ Basic starter package for html, css templates
 
 ## Progress
 
+###### 0.2.1
+
+* remove this folders:
+	* images
+	* fonz
+	  
+	  
 ###### 0.2
 
 * add less variables for:
