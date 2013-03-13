@@ -1,5 +1,5 @@
-/* Start mixins.less */
-/* -------------------------------------------------------------------- */
+// Start mixins.less
+//--------------------------------------------------------------------
 
 
 
@@ -7,11 +7,11 @@
 // Hide Something
 //--------------------------------------------------------------------
 
-.hidden {
+.hidden() {
 	display: none
 }
 
-.no-text {
+.no-text() {
 	text-indent: -9999px;
 	display: inline-block;
 	*display: inline;
@@ -30,7 +30,7 @@
 }
 
 // Clearfix
-.fix {
+.fix() {
 	*zoom: 1;
 	
 	&:before, &:after {
@@ -43,7 +43,7 @@
 	}
 }
 
-.wrap {
+.wrap() {
 	.fix;
 	.center();
 	position: relative;
@@ -93,6 +93,25 @@
 
 .font-size( @target: @basicFontSize, @context: 16 ) {
     font-size: ( @target / @context ) + 0em;
+}
+
+
+
+//
+// @FontFaces
+// ----------------------------------------------------------------------------------------
+
+.fontFace (@fontName, @fontFile) {
+    @font-face {
+        font-family: @fontName;
+        src: url('../fonz/@{fontFile}-webfont.eot');
+        src: url('../fonz/@{fontFile}-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonz/@{fontFile}-webfont.woff') format('woff'),
+             url('../fonz/@{fontFile}-webfont.ttf') format('truetype'),
+             url('../fonz/@{fontFile}-webfont.svg#@{fontFile}') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
 }
 
 
