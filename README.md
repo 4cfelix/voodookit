@@ -4,6 +4,10 @@ Basic starter package for html, css templates
 
 ## Progress
 
+###### 0.3.1
+
+* add advanced properties for headlines
+
 ###### 0.3
 
 * add font-size mixin for "rem" calculating
