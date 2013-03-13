@@ -4,6 +4,11 @@ Basic starter package for html, css templates
 
 ## Progress
 
+###### 0.3
+
+* add font-size mixin for "rem" calculating
+
+
 ###### 0.2.1
 
 * remove this folders:
