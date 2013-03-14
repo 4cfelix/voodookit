@@ -2,7 +2,12 @@
 
 Basic starter package for html, css templates
 
-## Progress
+## Changes
+
+###### 0.3.2
+
+* change html 5 structure of index.html
+* add some text highlightnings
 
 ###### 0.3.1
 
@@ -10,7 +15,7 @@ Basic starter package for html, css templates
 
 ###### 0.3
 
-* add font-size mixin for "rem" calculating
+* add font-size mixin for "rem" calculation
 
 
 ###### 0.2.1
