@@ -123,7 +123,7 @@
 // Selection Styling
 // ----------------------------------------------------------------------------------------
 
-.selection(@bg: @red, @color: #fff) {
+.selection(@bg: @primeColor, @color: #fff) {
 
 	::-webkit-selection {
 		background: @bg;
@@ -203,24 +203,29 @@
 // ----------------------------------------------------------------------------------------
 
 // Box radius
-.borderRadius( @radius: 10px ) {
+.borderRadius( @radius: 5px ) {
 	-webkit-border-radius: @radius;
 	   -moz-border-radius: @radius;
 	        border-radius: @radius;		
 }
 
 // Box shadow
-.boxShadow(@shadow: 0px 2px 3px 0px rgba(0, 0, 0, .4)) {
+.boxShadow(@shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5)) {
   -webkit-box-shadow: @shadow;
      -moz-box-shadow: @shadow;
           box-shadow: @shadow;
 }
 
 // Box shadow
-.insetBoxShadow(@shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .4)) {
+.insetBoxShadow(@shadow: inset 0px 1px 4px 0px rgba(255,255,255, .3)) {
   -webkit-box-shadow: @shadow;
      -moz-box-shadow: @shadow;
           box-shadow: @shadow;
+}
+
+// Text shadow
+.textShadow(@shadow: 1px 1px 0px #000) {
+	text-shadow: @shadow;
 }
 
 // Transition

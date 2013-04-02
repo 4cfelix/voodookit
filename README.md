@@ -4,6 +4,18 @@ Basic starter package for html, css templates
 
 ## Changes
 
+###### 0.3.3
+
+* add standard button styles
+* add `.textShadow` mixin
+* add basic list styles for ul, ol, dl
+* add basic `<strong>` and `<i>` styles
+* add bold font pattern of Titillium
+
+* edit some headline styles
+
+* remove fonz.less --> moved `.fontFace` into typography.less
+
 ###### 0.3.2
 
 * change html 5 structure of index.html

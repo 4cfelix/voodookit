@@ -134,7 +134,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* Start fonz.less */
+/* Start typography.less */
 /* -------------------------------------------------------------------- */
 @font-face {
   font-family: 'TitilliumRegluar';
@@ -143,19 +143,24 @@ table {
   font-weight: normal;
   font-style: normal;
 }
-/* Start typography.less */
-/* -------------------------------------------------------------------- */
+@font-face {
+  font-family: 'TitilliumBold';
+  src: url('../fonz/TitilliumText25L002-webfont.eot');
+  src: url('../fonz/TitilliumText25L002-webfont.eot?#iefix') format('embedded-opentype'), url('../fonz/TitilliumText25L002-webfont.woff') format('woff'), url('../fonz/TitilliumText25L002-webfont.ttf') format('truetype'), url('../fonz/TitilliumText25L002-webfont.svg#TitilliumText25L002') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 h1 {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 32px;
+  font-size: 2rem;
   line-height: 1.8199999999999998em;
   font-weight: bold;
   letter-spacing: .1em;
   color: #259eb1;
 }
 h2 {
-  font-size: 22px;
-  font-size: 1.375rem;
+  font-size: 25px;
+  font-size: 1.5625rem;
   line-height: 1.68em;
   font-weight: bold;
   letter-spacing: 0em;
@@ -201,11 +206,63 @@ a:hover {
   color: #34bfd5;
 }
 strong {
-  font-weight: bold;
+  font-family: 'TitilliumBold', Arial, sans serif;
 }
 i {
   font-style: italic;
   color: #999999;
+}
+ul,
+ol,
+dl {
+  margin: 10px 0;
+  list-style-position: inside;
+}
+ul {
+  list-style-type: disc;
+}
+ol {
+  list-style-type: decimal;
+}
+dd {
+  margin-bottom: 7.5px;
+}
+/* Start forms.less */
+/* -------------------------------------------------------------------- */
+.moreBtn {
+  padding: 7.5px 15px;
+  color: #fff;
+  background-color: #259eb1;
+  background-color: #1f8493;
+  background-image: -moz-linear-gradient(top, #259eb1, #1f8493);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#259eb1), to(#1f8493));
+  background-image: -webkit-linear-gradient(top, #259eb1, #1f8493);
+  background-image: -o-linear-gradient(top, #259eb1, #1f8493);
+  background-image: linear-gradient(to bottom, #259eb1, #1f8493);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff259eb1', endColorstr='#ff1f8493', GradientType=0);
+  display: inline-block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0px 1px 4px 0px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: inset 0px 1px 4px 0px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px 1px 4px 0px rgba(255, 255, 255, 0.3);
+}
+.moreBtn:hover {
+  color: #fff;
+  background-color: #1a717e;
+  background-image: -moz-linear-gradient(top, #259eb1, #1a717e);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#259eb1), to(#1a717e));
+  background-image: -webkit-linear-gradient(top, #259eb1, #1a717e);
+  background-image: -o-linear-gradient(top, #259eb1, #1a717e);
+  background-image: linear-gradient(to bottom, #259eb1, #1a717e);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff259eb1', endColorstr='#ff1a717e', GradientType=0);
 }
 /* Start navigation.less */
 /* -------------------------------------------------------------------- *//* Start layout.less */
@@ -218,15 +275,18 @@ i {
   margin-right: auto;
   margin-top: 30px;
   padding: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 .fontBox {
   width: 200px;
   float: right;
   background: #999999;
   padding: 15px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   color: #fff;
   font-size: 20px;
   font-size: 1.25rem;
@@ -237,6 +297,18 @@ body {
   background-color: #e6e6e6;
   font-size: 16px;
   font-size: 1rem;
+}
+body ::-webkit-selection {
+  background: #259eb1;
+  color: #ffffff;
+}
+body ::-moz-selection {
+  background: #259eb1;
+  color: #ffffff;
+}
+body ::selection {
+  background: #259eb1;
+  color: #ffffff;
 }
 p {
   margin: 15px 0;

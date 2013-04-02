@@ -1,2 +1,25 @@
 /* Start forms.less */
 /* -------------------------------------------------------------------- */
+
+
+
+//
+// Buttons
+// ----------------------------------------------------------------------------------------
+
+.moreBtn {
+	padding: @gap/4 @gap/2;
+	color: #fff;
+	background-color: @primeColor;
+	.vertical(@primeColor, darken(@primeColor, 7%));
+	display: inline-block;
+	.borderRadius();
+	.textShadow(0px 1px 1px rgba(0,0,0,0.75));
+	.boxShadow;
+	.insetBoxShadow;
+	
+	&:hover {
+		color: #fff;
+		.vertical(@primeColor, darken(@primeColor, 12%));
+	}
+}
