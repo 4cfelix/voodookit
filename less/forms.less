@@ -8,10 +8,10 @@
 // ----------------------------------------------------------------------------------------
 
 .moreBtn {
-	padding: @gap/4 @gap/2;
+	padding: ceil(@gap/4) ceil(@gap/2) floor(@gap/4);
 	color: #fff;
 	background-color: @primeColor;
-	.vertical(@primeColor, darken(@primeColor, 7%));
+	.vertical(@primeColor, darken(@primeColor, 8%));
 	display: inline-block;
 	.borderRadius();
 	.textShadow(0px 1px 1px rgba(0,0,0,0.75));
@@ -20,6 +20,34 @@
 	
 	&:hover {
 		color: #fff;
-		.vertical(@primeColor, darken(@primeColor, 12%));
+		.vertical(@primeColor, darken(@primeColor, 15%));
+	}
+}
+
+.true {
+	.vertical(@succesColor, darken(@succesColor, 8%));
+	
+	&:hover {
+		.vertical(@succesColor, darken(@succesColor, 15%));
+	}
+}
+
+.false {
+	.vertical(@warningColor, darken(@warningColor, 8%));
+	
+	&:hover {
+		.vertical(@warningColor, darken(@warningColor, 15%));
+	}
+}
+
+.warning {
+	color: @black80;
+	.vertical(@infoColor, darken(@infoColor, 8%));
+	.textShadow(1px 1px 0px rgba(255,255,255,0.8));
+	
+	&:hover {
+		color: @black80;
+		.vertical(@infoColor, darken(@infoColor, 22%));
+		
 	}
 }

@@ -6,6 +6,10 @@ You get an nice, simple and clean `HTML`, `LESS` basic template for starting you
 
 ## Changelog
 
+###### 0.3.4
+
+* add some button colors for different states
+
 ###### 0.3.3
 
 * add standard button styles
