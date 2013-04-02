@@ -1,9 +1,9 @@
 # HTML, Less Starter Template
-#### by [Dominic Vogl](http://cat-ia.de)
+#### by [Dominic Vogl](http://www.cat-ia.de)
 
-You get an nice, simple and clean html, less basic template for starting your future web projects
+You get an nice, simple and clean `HTML`, `LESS` basic template for starting your future web projects
 
-## Changes
+## Changelog
 
 ###### 0.3.3
 
