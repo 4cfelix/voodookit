@@ -1,4 +1,5 @@
-# Starter Pack for HTML, CSS Templates
+# HTML, Less Starter Template
+#### by [Dominic Vogl](http://cat-ia.de)
 
 Basic starter package for html, css templates
 
@@ -14,7 +15,7 @@ Basic starter package for html, css templates
 
 * edit some headline styles
 
-* remove fonz.less --> moved `.fontFace` into typography.less
+* remove `fonz.less` --> moved `.fontFace` into `typography.less`
 
 ###### 0.3.2
 
@@ -33,8 +34,8 @@ Basic starter package for html, css templates
 ###### 0.2.1
 
 * remove this folders:
-	* images
-	* fonz
+	* `images`
+	* `fonz`
 	  
 	  
 ###### 0.2
