@@ -2,7 +2,10 @@
 #### by [Dominic Vogl](http://www.cat-ia.de)
 
 You get an nice, simple and clean `HTML`, `LESS` basic template for starting your future web projects
+<<<<<<< HEAD
 ------------------
+=======
+>>>>>>> 0a9053806aa2727dd3801e6623f4ecbec1f8d7d2
 
 ## Changelog
 
