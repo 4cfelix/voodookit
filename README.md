@@ -6,6 +6,11 @@ You get an nice, simple and clean `HTML`, `LESS` basic template for starting you
 
 ## Changelog
 
+###### 0.3.5
+
+* add mixin for removing list styles
+* add mixin for removing any gap
+
 ###### 0.3.4
 
 * add some button colors for different states
