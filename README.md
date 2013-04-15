@@ -4,7 +4,11 @@
 You get an nice, simple and clean `HTML`, `LESS` basic template for starting your future web projects
 
 
-## Changelog
+## Changeless
+
+###### 0.3.6
+
+* fixed a bug with the a tag hover colors
 
 ###### 0.3.5
 
