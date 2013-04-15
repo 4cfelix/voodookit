@@ -8,7 +8,7 @@ You get an nice, simple and clean `HTML`, `LESS` basic template for starting you
 
 ###### 0.3.6
 
-* fixed a bug with the a tag hover colors
+* change the variable for the a hover state
 
 ###### 0.3.5
 
