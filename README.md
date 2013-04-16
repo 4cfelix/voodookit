@@ -6,6 +6,10 @@ You get an nice, simple and clean `HTML`, `LESS` basic template for starting you
 
 ## Changeless
 
+###### 0.3.7
+
+* changed the font path of `.fontFace()` function
+
 ###### 0.3.6
 
 * change the variable for the a hover state

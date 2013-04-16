@@ -63,13 +63,10 @@
 
 .wrap() {
 	.fix;
-	.center();
+	.center;
+	
 	position: relative;
 	max-width: @siteWidth;
-	
-	.ie6 & {
-		width: 64em;
-	}
 }
 
 
@@ -125,11 +122,11 @@
 .fontFace (@fontName, @fontFile) {
     @font-face {
         font-family: @fontName;
-        src: url('../fonz/@{fontFile}-webfont.eot');
-        src: url('../fonz/@{fontFile}-webfont.eot?#iefix') format('embedded-opentype'),
-             url('../fonz/@{fontFile}-webfont.woff') format('woff'),
-             url('../fonz/@{fontFile}-webfont.ttf') format('truetype'),
-             url('../fonz/@{fontFile}-webfont.svg#@{fontFile}') format('svg');
+        src: url('../fonz/@{fontFile}.eot');
+        src: url('../fonz/@{fontFile}.eot?#iefix') format('embedded-opentype'),
+             url('../fonz/@{fontFile}.woff') format('woff'),
+             url('../fonz/@{fontFile}.ttf') format('truetype'),
+             url('../fonz/@{fontFile}.svg#@{fontFile}') format('svg');
         font-weight: normal;
         font-style: normal;
     }
