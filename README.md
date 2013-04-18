@@ -6,6 +6,11 @@ You get an nice, simple and clean `HTML`, `LESS` basic template for starting you
 
 ## Changeless
 
+###### 0.3.8
+
+* add `boxsizing.htc` for IE7 support
+* add milestone list
+
 ###### 0.3.7
 
 * changed the font path of `.fontFace()` function
