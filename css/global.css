@@ -352,17 +352,44 @@ dd {
 .mainWrapper:after {
   clear: both;
 }
-.fontBox {
-  font-size: 20px;
-  font-size: 1.25rem;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  width: 200px;
-  float: right;
-  background: #999999;
-  padding: 15px;
-  color: #fff;
+.col1 {
+  padding: 10px;
+}
+.col2 {
+  overflow: hidden;
+  padding: 10px;
+}
+.col2 .col-single {
+  float: left;
+  width: 47%;
+  margin-left: 3%;
+}
+.col2 .col-single:first-child {
+  margin-left: 0;
+}
+.col3 {
+  overflow: hidden;
+  padding: 10px;
+}
+.col3 .col-single {
+  float: left;
+  width: 31.33333%;
+  margin-left: 3%;
+}
+.col3 .col-single:first-child {
+  margin-left: 0;
+}
+.col4 {
+  overflow: hidden;
+  padding: 10px;
+}
+.col4 .col-single {
+  float: left;
+  width: 22.75%;
+  margin-left: 3%;
+}
+.col4 .col-single:first-child {
+  margin-left: 0;
 }
 body {
   font-size: 16px;

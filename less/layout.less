@@ -7,17 +7,78 @@
 	
 	background-color: #fff;
 	margin-top: @gap;
-	padding: @gap;
-	
+	padding: @gap;	
 }
 
-.fontBox {
-	.fontSize(20);
-	.borderRadius(5px);
+
+
+//
+// 1 Column Element
+// ----------------------------------------------------------------------------------------
+
+.col1 {
+	padding: @gap/3;
+}
+
+
+
+//
+// 2 Columns Element
+// ----------------------------------------------------------------------------------------
+
+.col2 {
+	overflow: hidden;
+	padding: @gap/3;
 	
-	width: 200px;
-	float: right;
-	background: @black40;
-	padding: @gap/2;
-	color: #fff;
+	.col-single {
+		float: left;
+		width: 47%;
+		margin-left: 3%;
+		
+		&:first-child {
+			margin-left: 0;
+		}
+	}	
+}
+
+
+
+//
+// 3 Columns Element
+// ----------------------------------------------------------------------------------------
+
+.col3 {
+	overflow: hidden;
+	padding: @gap/3;
+	
+	.col-single {
+		float: left;
+		width: 31.33333%;
+		margin-left: 3%;
+		
+		&:first-child {
+			margin-left: 0;
+		}
+	}	
+}
+
+
+
+//
+// 4 Columns Element
+// ----------------------------------------------------------------------------------------
+
+.col4 {
+	overflow: hidden;
+	padding: @gap/3;
+	
+	.col-single {
+		float: left;
+		width: 22.75%;
+		margin-left: 3%;
+		
+		&:first-child {
+			margin-left: 0;
+		}
+	}	
 }

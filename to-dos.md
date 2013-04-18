@@ -6,10 +6,6 @@ You get an nice, simple and clean `HTML`, `LESS` basic template for starting you
 
 ## Changeless
 
-###### 0.4
-
-* add a very basic grid
-
 ###### 0.5
 
 * add basic flexslider

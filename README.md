@@ -6,6 +6,14 @@ You get an nice, simple and clean `HTML`, `LESS` basic template for starting you
 
 ## Changeless
 
+###### 0.4
+
+* add very basics grid classes `.col1` - `.col4` styles for:
+	* 1 Column Layout `.col1`
+	* 2 Column Layout `.col2`
+	* 3 Column Layout `.col3`
+	* 4 Column Layout `.col4`
+
 ###### 0.3.8
 
 * add `boxsizing.htc` for IE7 support
