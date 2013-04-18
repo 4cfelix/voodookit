@@ -4,7 +4,7 @@
 You get an nice, simple and clean `HTML`, `LESS` basic template for starting your future web projects
 
 
-## Changeless
+## Change History
 
 ###### 0.4
 

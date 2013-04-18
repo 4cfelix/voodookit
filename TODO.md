@@ -4,7 +4,7 @@
 You get an nice, simple and clean `HTML`, `LESS` basic template for starting your future web projects
 
 
-## Changeless
+## Changes
 
 ###### 0.5
 
@@ -13,3 +13,7 @@ You get an nice, simple and clean `HTML`, `LESS` basic template for starting you
 	* basic settings
 	* classes & frames
 	
+	
+###### 0.6
+
+* Until there are no changes	
