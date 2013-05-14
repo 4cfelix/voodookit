@@ -20,50 +20,56 @@
 
 .h1() {
 	.fontSize(32);
-	line-height: @baseLineHeight*1.3;
+	line-height: 1em;
 	font-weight: bold;
 	letter-spacing: .1em;
 	color: @primeColor;
+	margin: 0 0 @gap/2.3;
 }
 
 .h2() {
 	.fontSize(25);
-	line-height: @baseLineHeight*1.2;
+	line-height: 1em;
 	font-weight: bold;
 	letter-spacing: 0em;
 	color: @primeColor;
+	margin: 0 0 @gap/2.3;
 }
 
 .h3() {
 	.fontSize(20);
-	line-height: @baseLineHeight*1.1;
+	line-height: 1em;
 	font-weight: bold;
 	letter-spacing: .15em;
 	color: @primeColor;
+	margin: 0 0 @gap/2.3;
 }
 
 .h4() {
 	.fontSize(18);
-	line-height: @baseLineHeight;
+	line-height: 1em;
 	font-weight: normal;
 	letter-spacing: 0em;
 	color: @textColor;
+	margin: 0 0 @gap/2.3;
 }
 
 .h5() {
 	.fontSize(17);
-	line-height: @baseLineHeight;
+	line-height: 1em;
 	font-weight: normal;
 	letter-spacing: 0em;
 	color: @textColor;
+	margin: 0 0 @gap/2.3;
 }
 
 .h6() {
 	.fontSize(14);
-	line-height: @baseLineHeight;
+	line-height: 1em;
 	font-weight: bold;
 	letter-spacing: 0em;
 	color: @textColor;
+	margin: 0 0 @gap/2.3;
 }
 
 
@@ -93,14 +99,22 @@ a {
 
 
 //
+// Paragraphs
+// ----------------------------------------------------------------------------------------
+
+p {
+	margin: 0 0 @gap/2.3;
+}
+
+//
 // Text Highlight
 // ----------------------------------------------------------------------------------------
 
-b, strong {
+strong {
 	font-family: @fontBold;
 }
 
-i, em {
+i {
 	font-style: italic;
 	color: @black40;
 }

@@ -153,50 +153,56 @@ table {
 h1 {
   font-size: 32px;
   font-size: 2rem;
-  line-height: 1.8199999999999998em;
+  line-height: 1em;
   font-weight: bold;
   letter-spacing: .1em;
   color: #259eb1;
+  margin: 0 0 13.043478260869566px;
 }
 h2 {
   font-size: 25px;
   font-size: 1.5625rem;
-  line-height: 1.68em;
+  line-height: 1em;
   font-weight: bold;
   letter-spacing: 0em;
   color: #259eb1;
+  margin: 0 0 13.043478260869566px;
 }
 h3 {
   font-size: 20px;
   font-size: 1.25rem;
-  line-height: 1.54em;
+  line-height: 1em;
   font-weight: bold;
   letter-spacing: .15em;
   color: #259eb1;
+  margin: 0 0 13.043478260869566px;
 }
 h4 {
   font-size: 18px;
   font-size: 1.125rem;
-  line-height: 1.4em;
+  line-height: 1em;
   font-weight: normal;
   letter-spacing: 0em;
   color: #333333;
+  margin: 0 0 13.043478260869566px;
 }
 h5 {
   font-size: 17px;
   font-size: 1.0625rem;
-  line-height: 1.4em;
+  line-height: 1em;
   font-weight: normal;
   letter-spacing: 0em;
   color: #333333;
+  margin: 0 0 13.043478260869566px;
 }
 h6 {
   font-size: 14px;
   font-size: 0.875rem;
-  line-height: 1.4em;
+  line-height: 1em;
   font-weight: bold;
   letter-spacing: 0em;
   color: #333333;
+  margin: 0 0 13.043478260869566px;
 }
 a {
   text-decoration: none;
@@ -205,12 +211,13 @@ a {
 a:hover {
   color: #34bfd5;
 }
-b,
+p {
+  margin: 0 0 13.043478260869566px;
+}
 strong {
   font-family: 'TitilliumBold', Arial, sans serif;
 }
-i,
-em {
+i {
   font-style: italic;
   color: #999999;
 }
@@ -411,7 +418,4 @@ body ::-moz-selection {
 body ::selection {
   background: #259eb1;
   color: #ffffff;
-}
-p {
-  margin: 15px 0;
 }
