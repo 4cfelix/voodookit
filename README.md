@@ -6,6 +6,9 @@ You get an nice, simple and clean `HTML`, `LESS` basic template for starting you
 
 ## Change History
 
+###### 0.5.1
+* optimize font size calculation
+
 ###### 0.5
 
 * add a full responsive grid system, up to max 12 columns

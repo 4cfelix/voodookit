@@ -111,9 +111,11 @@ nav,
 section {
   display: block;
 }
+html {
+  font-size: 62.5%;
+}
 body {
   line-height: 1;
-  font-size: 16px;
 }
 ol,
 ul {
@@ -152,7 +154,7 @@ table {
 }
 h1 {
   font-size: 32px;
-  font-size: 2rem;
+  font-size: 3.2rem;
   line-height: 1em;
   font-weight: bold;
   letter-spacing: .1em;
@@ -161,7 +163,7 @@ h1 {
 }
 h2 {
   font-size: 25px;
-  font-size: 1.5625rem;
+  font-size: 2.5rem;
   line-height: 1em;
   font-weight: bold;
   letter-spacing: 0em;
@@ -170,7 +172,7 @@ h2 {
 }
 h3 {
   font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 2rem;
   line-height: 1em;
   font-weight: bold;
   letter-spacing: .15em;
@@ -179,7 +181,7 @@ h3 {
 }
 h4 {
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   line-height: 1em;
   font-weight: normal;
   letter-spacing: 0em;
@@ -188,7 +190,7 @@ h4 {
 }
 h5 {
   font-size: 17px;
-  font-size: 1.0625rem;
+  font-size: 1.7rem;
   line-height: 1em;
   font-weight: normal;
   letter-spacing: 0em;
@@ -197,7 +199,7 @@ h5 {
 }
 h6 {
   font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   line-height: 1em;
   font-weight: bold;
   letter-spacing: 0em;
@@ -562,7 +564,7 @@ dd {
 }
 body {
   font-size: 16px;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-family: 'TitilliumRegluar', Arial, sans serif;
   line-height: 1.4em;
   background-color: #e6e6e6;

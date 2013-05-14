@@ -107,7 +107,7 @@
 // ----------------------------------------------------------------------------------------
 
 .fontSize(@sizeValue){
-  @remValue: @sizeValue / @baseFontSize;
+  @remValue: @sizeValue / 10;
   @pxValue: (@sizeValue);
   font-size: ~"@{pxValue}px"; 
   font-size: ~"@{remValue}rem";
