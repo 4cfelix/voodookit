@@ -205,10 +205,12 @@ a {
 a:hover {
   color: #34bfd5;
 }
+b,
 strong {
   font-family: 'TitilliumBold', Arial, sans serif;
 }
-i {
+i,
+em {
   font-style: italic;
   color: #999999;
 }
