@@ -8,7 +8,9 @@ You get an nice, simple and clean `HTML`, `LESS` basic template for starting you
 
 ###### 0.5
 
-* Integrate a full responsive grid system up to max 12 columns with media queries
+* add a full responsive grid system, up to max 12 columns
+* add simple with media queries for various devices
+* change `less` structure for typo3 compiler extention
 
 ###### 0.4
 
