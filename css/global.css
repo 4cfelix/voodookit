@@ -376,11 +376,11 @@ dd {
   background-color: #019c0f;
   color: white;
   text-align: center;
-  margin-left: 2.127659574%;
-  *margin-left: 2.074468085%;
+  padding-left: 2.127659574%;
+  *padding-left: 2.074468085%;
 }
 .contentWrap [class*="col"]:first-child {
-  margin-left: 0;
+  padding-left: 0;
 }
 .contentWrap .col12 {
   width: 100%;
@@ -447,11 +447,11 @@ dd {
   .contentWrap [class*="col"] {
     float: left;
     background-color: #259eb1;
-    margin-left: 1.694915254%;
-    *margin-left: 1.641723765%;
+    padding-left: 1.694915254%;
+    *padding-left: 1.641723765%;
   }
   .contentWrap [class*="col"]:first-child {
-    margin-left: 0;
+    padding-left: 0;
   }
   .contentWrap .col12 {
     width: 100%;
@@ -512,7 +512,7 @@ dd {
     display: block;
     background-color: #ffda58;
     width: 100%;
-    margin-left: 0;
+    padding-left: 0;
     margin-bottom: 15px;
   }
   .col12,
