@@ -6,6 +6,10 @@ You get an nice, simple and clean `HTML`, `LESS` basic template for starting you
 
 ## Change History
 
+###### 0.5
+
+* Integrate a full responsive grid system up to max 12 columns with media queries
+
 ###### 0.4
 
 * add very basics grid classes `.col1` - `.col4` styles for:

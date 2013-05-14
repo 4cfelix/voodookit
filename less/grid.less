@@ -1,0 +1,264 @@
+/* Start grid.less */
+/* -------------------------------------------------------------------- */
+
+
+//
+// Fluid Responsive Grid
+// ----------------------------------------------------------------------------------------
+
+
+.mainWrapper {
+	*zoom: 1;
+	
+	&:before,
+	&:after {
+		display: table;
+		content: "";
+		line-height: 0;
+	}
+	
+	&:after {
+		clear: both;
+	}
+
+}
+
+.contentWrap {
+	width: 100%;
+	*zoom: 1;
+	margin-bottom: @gap/2;
+	
+	&:before,
+	&:after {
+		display: table;
+		content: "";
+		line-height: 0;
+	}
+	
+	&:after {
+	  clear: both;
+	}
+	
+	[class*="col"] {
+		float: left;
+		background-color: @successColor;
+		color: white;
+		text-align: center;
+		margin-left: 2.127659574%;
+		*margin-left: 2.074468085%;
+	  
+		&:first-child {
+			margin-left: 0;
+		}	  
+	}
+		
+	.col12 {
+		width: 100%;
+		*width: 99.946808511%;
+	}
+	
+	.col11 {
+		width: 91.489361702%;
+		*width: 91.436170213%;
+	}
+	
+	.col10 {
+		width: 82.978723404%;
+		*width: 82.925531915%;
+	}
+	
+	.col9 {
+		width: 74.468085106%;
+		*width: 74.414893617%;
+	}
+	
+	.col8 {
+		width: 65.957446809%;
+		*width: 65.904255319%;
+	}
+	
+	.col7 {
+		width: 57.446808511%;
+		*width: 57.393617021%;
+	}
+	
+	.col6 {
+		width: 48.936170213%;
+		*width: 48.882978723%;
+	}
+	
+	.col5 {
+		width: 40.425531915%;
+		*width: 40.372340426%;
+	}
+	
+	.col4 {
+		width: 31.914893617%;
+		*width: 31.861702128%;
+	}
+	
+	.col3 {
+		width: 23.404255319%;
+		*width: 23.35106383%;
+	}
+	
+	.col2 {
+		width: 14.893617021%;
+		*width: 14.840425532%;
+	}
+	
+	.col1 {
+		width: 6.382978723%;
+		*width: 6.329787234%;
+	}
+}
+
+
+//
+// Fluid Responsive Grid (1200px)
+// ----------------------------------------------------------------------------------------
+
+@media (min-width: 1200px) {
+	.contentWrap {
+		width: 100%;
+		*zoom: 1;
+    
+	    &:before,
+	    &:after {
+			display: table;
+			content: "";
+			line-height: 0;
+	    }  
+	    
+	    &:after {
+	 	   clear: both;
+	    } 
+	    
+	    [class*="col"] {
+		    float: left;
+		    background-color: @primeColor;
+		    margin-left: 1.694915254%;
+		    *margin-left: 1.641723765%;
+		    
+		    &:first-child {
+		    	margin-left: 0;
+		    }
+	    }  
+	    
+	    .col12 {
+		    width: 100%;
+		    *width: 99.946808511%;
+	    }
+	    
+	    .col11 {
+		    width: 91.525423729%;
+		    *width: 91.472232239%;
+	    }
+	    
+	    .col10 {
+		    width: 83.050847458%;
+		    *width: 82.997655968%;
+	    } 
+	    
+	    .col9 {
+		    width: 74.576271186%;
+		    *width: 74.523079697%;
+	    }
+	    
+	    .col8 {
+		    width: 66.101694915%;
+		    *width: 66.048503426%;
+	    } 
+	    
+	    .col7 {
+		    width: 57.627118644%;
+		    *width: 57.573927155%;
+	    }
+	    
+	    .col6 {
+		    width: 49.152542373%;
+		    *width: 49.099350884%;
+	    }
+	    
+	    .col5 {
+		    width: 40.677966102%;
+		    *width: 40.624774612%;
+	    }
+	    
+	    .col4 {
+		    width: 32.203389831%;
+		    *width: 32.150198341%;
+	    }
+	    
+	    .col3 {
+		    width: 23.728813559%;
+		    *width: 23.67562207%;
+	    }
+	    
+	    .col2 {
+		    width: 15.254237288%;
+		    *width: 15.201045799%;
+	    }
+	    
+	    .col1 {
+		    width: 6.779661017%;
+		    *width: 6.726469528%;
+	    }
+	}
+}
+
+
+
+//
+// Fluid Responsive Grid (1200px)
+// ----------------------------------------------------------------------------------------
+
+@media handheld, only screen and (max-width: 768px) {
+	.contentWrap {
+		width: 100%;		
+	} 
+	
+	[class*="col"],
+	.contentWrap [class*="col"] {
+		float: none;
+		display: block;
+		background-color: @infoColor;
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: @gap/2;
+	}
+	
+	.col12,
+	.contentWrap .col12 {
+		width: 100%;
+	}	
+}
+
+
+//
+// Custom Breakpoints
+// ----------------------------------------------------------------------------------------
+
+@media screen and (max-width: 480px) {
+	// Add your styles for devices with a maximum width of 480
+}
+
+@media screen and (max-width: 768px) {
+  // Add your styles for devices with a maximum width of 768
+}
+
+@media screen and (max-width: 320px) {
+  // Add your styles for devices with a maximum width of 320
+}
+
+@media screen and (max-width: 1024px) {
+  // Add your styles for devices with a maximum width of 1024 
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  // Add your styles for devices with a maximum width of 1024, iPads (landscape)
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  // Add your styles for devices with a maximum width of 768, iPads (portrait)
+}

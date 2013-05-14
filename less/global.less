@@ -25,6 +25,7 @@
 @import "navigation";
 
 // Layout
+@import "grid";
 @import "layout";
 
 // ---------------------------------------------------------------------------
@@ -38,4 +39,30 @@ body {
 	font-family: @fontNormal;
 	line-height: @baseLineHeight;
 	background-color: @black10;	
+}
+
+
+//
+// Fluid Images, Videos
+// ----------------------------------------------------------------------------------------
+
+figure {
+  margin: 0;
+}
+img,
+object,
+embed,
+video {
+  max-width: 100%;
+  _width: 100%;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+img {
+  height: auto;
 }
