@@ -1,0 +1,179 @@
+/* Start slider.less */
+/* -------------------------------------------------------------------- */
+
+.slide-container,
+.slider {
+	a {
+		&:hover,
+		&:focus {
+			outline: none;
+		}
+	}
+}
+.slides,
+.slide-control-nav,
+.slide-direction-nav {
+	.removeListStyles();
+}
+
+.slider {
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	zoom: 1;
+	
+	.slides {
+		.fix();
+		
+		img {
+			display: block;
+			.square(100%);
+			border: 0;
+		}
+		
+		li {
+			position: relative;
+		}
+		
+		& > li {
+			position: relative;
+			display: none
+		}
+	}
+	
+	.slide-direction-nav {
+		a {
+			display: none;
+		}
+	}
+	
+	&:hover {
+		.slide-direction-nav {
+			a {
+				display: block;
+			}
+		}
+	}
+}
+
+html[xmlns] .slides,
+.no-js .slides > li:first-child {
+	display: block;
+}
+
+.slide-pauseplay span {
+	text-transform: capitalize;
+}
+
+.slide-viewport {
+	.transition(all .3s ease);
+	max-height: 2000px;
+	
+	.loading & {
+		max-height: 300px;
+	}
+}
+
+.slide-direction-nav {
+	height: 0;
+	
+	li {
+		position: inherit;
+	}
+		
+	a {
+		.square(40px);
+		cursor: pointer;
+		display: block;
+		margin: 20px 0 0;
+		position: absolute;
+		text-indent: -9999px;
+		top: 50%;
+		z-index: 10000;
+		background-color: rgba(0,0,0,0.5);
+				
+		&:hover {
+			background-color: @primeColor;
+		}
+	}
+	
+	.slide-prev {
+		left: 10px;
+	}
+	
+	.slide-next {
+		right: 10px;
+		bbackground-color: rgba(0,0,0,0.5);
+		
+		&:hover {
+			background-color: @primeColor;
+		}
+	}
+	
+	.slide-disabled {
+		cursor: default;
+		.opacity(30);
+	}
+}
+
+.slide-control-nav {
+	bottom: 20px;
+	right: 20px;
+	position: absolute;
+	text-align: center;
+
+	li {
+		display: inline;
+		margin: 0 6px;
+		zoom: 1;
+		float: left;
+	}
+	
+	a {
+		.borderRadius(20px);
+		.square(11px);
+		background: white;
+		background: rgba(255,255,255,0.5);
+		cursor: pointer;
+		display: block;
+		text-indent: -9999px;
+		
+		&:hover {
+			background: @primeColor;
+			background: rgba(255,255,255,0.7);
+		}
+	}
+		
+	.slide-active {
+		background: #fff;
+		cursor: default;
+	}
+}
+
+.slide-control-thumbs {
+	margin: 5px 0 0;
+	overflow: hidden;
+	position: static;
+	
+	li {
+		float: left;
+		margin: 0;
+		width: 25%
+	}
+	
+	img {
+		.opacity(70);
+		cursor: pointer;
+		display: block;
+		width: 100%;
+		
+		&:hover {
+			.opacity(100);
+		}
+	}
+	
+	.slide-active {
+		cursor: default;
+		.opacity(100);
+	}
+}

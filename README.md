@@ -6,6 +6,14 @@ You get an nice, simple and clean `HTML`, `LESS` basic template for starting you
 
 ## Change History
 
+###### 0.6
+* integrate a full responsive content slider based on the flexslider
+* load jquery 1.9.1 from google.com
+* change `flexslider.css` to `slider.less` and add `less` functions
+* minor bugfixing
+
+###### 0.5.3
+* minor structure changes and cleanup
 
 ###### 0.5.2
 * edit classes for grid system

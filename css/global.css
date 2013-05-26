@@ -343,7 +343,180 @@ dd {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffda58', endColorstr='#ffe7b400', GradientType=0);
 }
 /* Start navigation.less */
-/* -------------------------------------------------------------------- *//* Start grid.less */
+/* -------------------------------------------------------------------- *//* Start slider.less */
+/* -------------------------------------------------------------------- */
+.slide-container a:hover,
+.slider a:hover,
+.slide-container a:focus,
+.slider a:focus {
+  outline: none;
+}
+.slides,
+.slide-control-nav,
+.slide-direction-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+}
+.slides li,
+.slide-control-nav li,
+.slide-direction-nav li {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+}
+.slider {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  zoom: 1;
+}
+.slider .slides {
+  *zoom: 1;
+}
+.slider .slides:before,
+.slider .slides:after {
+  display: table;
+  content: "";
+}
+.slider .slides:after {
+  clear: both;
+}
+.slider .slides img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.slider .slides li {
+  position: relative;
+}
+.slider .slides > li {
+  position: relative;
+  display: none;
+}
+.slider .slide-direction-nav a {
+  display: none;
+}
+.slider:hover .slide-direction-nav a {
+  display: block;
+}
+html[xmlns] .slides,
+.no-js .slides > li:first-child {
+  display: block;
+}
+.slide-pauseplay span {
+  text-transform: capitalize;
+}
+.slide-viewport {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  max-height: 2000px;
+}
+.loading .slide-viewport {
+  max-height: 300px;
+}
+.slide-direction-nav {
+  height: 0;
+}
+.slide-direction-nav li {
+  position: inherit;
+}
+.slide-direction-nav a {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: block;
+  margin: 20px 0 0;
+  position: absolute;
+  text-indent: -9999px;
+  top: 50%;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.slide-direction-nav a:hover {
+  background-color: #259eb1;
+}
+.slide-direction-nav .slide-prev {
+  left: 10px;
+}
+.slide-direction-nav .slide-next {
+  right: 10px;
+  bbackground-color: rgba(0, 0, 0, 0.5);
+}
+.slide-direction-nav .slide-next:hover {
+  background-color: #259eb1;
+}
+.slide-direction-nav .slide-disabled {
+  cursor: default;
+  opacity: 30;
+  filter: alpha(opacity=3000);
+}
+.slide-control-nav {
+  bottom: 20px;
+  right: 20px;
+  position: absolute;
+  text-align: center;
+}
+.slide-control-nav li {
+  display: inline;
+  margin: 0 6px;
+  zoom: 1;
+  float: left;
+}
+.slide-control-nav a {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  width: 11px;
+  height: 11px;
+  background: white;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  display: block;
+  text-indent: -9999px;
+}
+.slide-control-nav a:hover {
+  background: #259eb1;
+  background: rgba(255, 255, 255, 0.7);
+}
+.slide-control-nav .slide-active {
+  background: #fff;
+  cursor: default;
+}
+.slide-control-thumbs {
+  margin: 5px 0 0;
+  overflow: hidden;
+  position: static;
+}
+.slide-control-thumbs li {
+  float: left;
+  margin: 0;
+  width: 25%;
+}
+.slide-control-thumbs img {
+  opacity: 70;
+  filter: alpha(opacity=7000);
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+.slide-control-thumbs img:hover {
+  opacity: 100;
+  filter: alpha(opacity=10000);
+}
+.slide-control-thumbs .slide-active {
+  cursor: default;
+  opacity: 100;
+  filter: alpha(opacity=10000);
+}
+/* Start grid.less */
 /* -------------------------------------------------------------------- */
 figure {
   margin: 0;
