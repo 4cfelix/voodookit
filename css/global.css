@@ -345,6 +345,24 @@ dd {
 /* Start navigation.less */
 /* -------------------------------------------------------------------- *//* Start grid.less */
 /* -------------------------------------------------------------------- */
+figure {
+  margin: 0;
+}
+img,
+object,
+embed,
+video {
+  max-width: 100%;
+  _width: 100%;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  height: auto;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
 .mainWrapper {
   *zoom: 1;
 }
@@ -580,24 +598,4 @@ body ::-moz-selection {
 body ::selection {
   background: #259eb1;
   color: #ffffff;
-}
-figure {
-  margin: 0;
-}
-img,
-object,
-embed,
-video {
-  max-width: 100%;
-  _width: 100%;
-}
-img {
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-}
-svg:not(:root) {
-  overflow: hidden;
-}
-img {
-  height: auto;
 }
