@@ -1,2 +1,57 @@
 /* Start navigation.less */
 /* -------------------------------------------------------------------- */
+
+
+
+//
+// Hauptnavigation
+// ----------------------------------------------------------------------------------------
+
+
+#navigation {
+	.wrap;
+	background: @primeColor;
+	margin-top: @gap;
+	z-index: 100;
+		
+	li {
+		float: left;
+		position: relative;
+		
+		&:hover {
+			ul {
+				display: block;
+			}
+		}
+	}
+	
+	ul {
+		.removeListStyles;
+		
+		ul {
+			position: absolute;
+			display: none;
+			background-color: @linkActive;
+			
+			li {
+				float: none;
+			}
+		}
+	}
+		
+	span {
+		padding: @gap/2.5 @gap/2;
+		display: block;
+		color: #fff;
+		
+		&:hover {
+			background-color: @linkHover; 
+		}
+	}
+	
+	.current-item {
+		span {
+			background-color: @linkActive;
+		}
+	}
+}

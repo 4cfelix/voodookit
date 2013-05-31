@@ -6,6 +6,9 @@ You get an nice, simple and clean `HTML`, `LESS` basic template for starting you
 
 ## Change History
 
+###### 0.7
+* build a two level main navigation with simple and clean structure
+
 ###### 0.6.
 * integrate a full responsive content slider based on the flexslider
 * load `jquery 1.9.1` from [google.com](http://www.google.com)
