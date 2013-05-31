@@ -8,7 +8,7 @@ You get an nice, simple and clean `HTML`, `LESS` basic template for starting you
 
 ###### 0.6
 * integrate a full responsive content slider based on the flexslider
-* load jquery 1.9.1 from google.com
+* load `jquery 1.9.1` from [google.com](http://www.google.com)
 * change `flexslider.css` to `slider.less` and add `less` functions
 * minor bugfixing
 
