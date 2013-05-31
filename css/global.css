@@ -402,6 +402,16 @@ dd {
 #navigation .current-item span {
   background-color: #29b1c6;
 }
+@media screen and (max-width: 480px) {
+  #navigation li {
+    float: none;
+  }
+  #navigation ul ul {
+    background-color: #218b9c;
+    display: none;
+    position: inherit;
+  }
+}
 /* Start slider.less */
 /* -------------------------------------------------------------------- */
 .slide-container a:hover,

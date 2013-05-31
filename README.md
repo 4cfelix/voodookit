@@ -1,4 +1,4 @@
-# HTML, Less Starter Template
+# VooDooKit
 #### by [Dominic Vogl](http://www.cat-ia.de)
 
 You get an nice, simple and clean `HTML`, `LESS` basic template for starting your future web projects.
@@ -6,7 +6,10 @@ You get an nice, simple and clean `HTML`, `LESS` basic template for starting you
 
 ## Change History
 
-###### 0.7
+###### 0.7.1.
+* add media queries for responsive design
+
+###### 0.7.
 * build a two level main navigation with simple and clean structure
 
 ###### 0.6.
