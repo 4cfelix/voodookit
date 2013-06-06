@@ -1,4 +1,4 @@
-/* Start global.less */
+/* Start all.less */
 /* -------------------------------------------------------------------- */
 
 /*
@@ -10,8 +10,11 @@
 */
 
 
+//
 // ASSIMILATE THIS!
-@import "modules/variables";
+// ----------------------------------------------------------------------------------------
+
+@import "modules/settings";
 @import "modules/mixins";
 @import "modules/reset";
 
@@ -30,19 +33,8 @@
 // Grid
 @import "modules/grid";
 
+// Global Styles
+@import "modules/global";
+
 // Layout
 @import "modules/layout";
-
-
-
-// ---------------------------------------------------------------------------
-
-
-body {
-	.selection;
-	.fontSize(16);
-
-	font-family: @fontNormal;
-	line-height: @baseLineHeight;
-	background-color: @black10;	
-}

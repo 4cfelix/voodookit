@@ -1,4 +1,4 @@
-/* Start global.less */
+/* Start all.less */
 /* -------------------------------------------------------------------- */
 /*
      Theme Name:		Your Name
@@ -798,6 +798,27 @@ svg:not(:root) {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   
 }
+/* Start global.less */
+/* -------------------------------------------------------------------- */
+body {
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-family: 'TitilliumRegluar', Arial, sans serif;
+  line-height: 1.4em;
+  background-color: #e6e6e6;
+}
+body ::-webkit-selection {
+  background: #259eb1;
+  color: #ffffff;
+}
+body ::-moz-selection {
+  background: #259eb1;
+  color: #ffffff;
+}
+body ::selection {
+  background: #259eb1;
+  color: #ffffff;
+}
 /* Start layout.less */
 /* -------------------------------------------------------------------- */
 .mainWrapper {
@@ -823,23 +844,4 @@ svg:not(:root) {
 }
 .mainWrapper:after {
   clear: both;
-}
-body {
-  font-size: 16px;
-  font-size: 1.6rem;
-  font-family: 'TitilliumRegluar', Arial, sans serif;
-  line-height: 1.4em;
-  background-color: #e6e6e6;
-}
-body ::-webkit-selection {
-  background: #259eb1;
-  color: #ffffff;
-}
-body ::-moz-selection {
-  background: #259eb1;
-  color: #ffffff;
-}
-body ::selection {
-  background: #259eb1;
-  color: #ffffff;
 }

@@ -1,5 +1,9 @@
 # Change History
 
+###### 0.7.2
+* change `less` structure
+* add normalize `less` functions
+
 ###### 0.7.1.
 * add media queries for responsive design
 
