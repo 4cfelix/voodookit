@@ -1,5 +1,10 @@
 # Change History
 
+##### 1.0
+* some major performance improvements
+* cleanup the code
+* fixed issues
+
 ###### 0.7.2
 * change `less` structure
 * add normalize `less` functions
