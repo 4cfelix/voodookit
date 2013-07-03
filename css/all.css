@@ -391,6 +391,9 @@ dd {
 #navigation ul ul li {
   float: none;
 }
+#navigation ul ul li span:hover {
+  background-color: #34bfd5;
+}
 #navigation span {
   padding: 12px 15px;
   display: block;
@@ -399,7 +402,7 @@ dd {
 #navigation span:hover {
   background-color: #34bfd5;
 }
-#navigation .current-item span {
+#navigation .current-menu-item span {
   background-color: #29b1c6;
 }
 @media screen and (max-width: 480px) {
@@ -633,9 +636,6 @@ svg:not(:root) {
 }
 .cc_contentWrap [class*="cc_col"] {
   float: left;
-  background-color: #019c0f;
-  color: white;
-  text-align: center;
   padding-left: 2.127659574%;
   *padding-left: 2.074468085%;
 }
@@ -706,7 +706,6 @@ svg:not(:root) {
   }
   .cc_contentWrap [class*="cc_col"] {
     float: left;
-    background-color: #259eb1;
     padding-left: 1.694915254%;
     *padding-left: 1.641723765%;
   }
@@ -770,7 +769,6 @@ svg:not(:root) {
   .cc_contentWrap [class*="cc_col"] {
     float: none;
     display: block;
-    background-color: #ffda58;
     width: 100%;
     padding-left: 0;
     margin-bottom: 15px;
@@ -844,4 +842,9 @@ body ::selection {
 }
 .mainWrapper:after {
   clear: both;
+}
+.cc_contentWrap [class*="cc_col"] {
+  background-color: #259eb1;
+  color: white;
+  text-align: center;
 }
