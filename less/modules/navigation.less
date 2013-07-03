@@ -35,6 +35,12 @@
 			
 			li {
 				float: none;
+
+                span {
+                    &:hover {
+                      background-color: @linkHover;
+                    }
+                }
 			}
 		}
 	}
@@ -49,7 +55,7 @@
 		}
 	}
 	
-	.current-item {
+	.current-menu-item {
 		span {
 			background-color: @linkActive;
 		}
