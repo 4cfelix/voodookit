@@ -37,13 +37,15 @@ function load_Scripts() {
         }
     }
     // Lade Javascript
+    $baseURL = get_template_directory_uri();
+
     wp_deregister_script('l10n');
     wp_enqueue_script('jquery');
-    wp_enqueue_script('flexslider', get_template_directory_uri() . '/js/jquery.flexslider-min.js', array('jquery'), '1.0', true );
-    wp_enqueue_script('init', get_template_directory_uri() . '/js/cc_init.js', array('jquery'), '1.0', true );
+    wp_enqueue_script('flexslider', $baseURL . '/js/jquery.flexslider-min.js', array('jquery'), '1.0', true );
+    wp_enqueue_script('init', $baseURL . '/js/cc_init.js', array('jquery'), '1.0', true );
 
     // Lade CSS
-    wp_register_style('global', get_template_directory_uri() . '/less/all.less', array() , false, 'all' );
+    wp_register_style('global', $baseURL . '/less/all.less', array() , false, 'all' );
     wp_enqueue_style('global');
 }
 

@@ -27,9 +27,8 @@
 ###### 0.5.2.
 * edit classes for grid system
 
-
 ###### 0.5.1.
-
+*
 * optimize font size calculation
 
 ###### 0.5.

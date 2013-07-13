@@ -11,12 +11,12 @@
     <!-- If you want develop for mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>VooDooKit - HTML, LESS Starterkit</title>
+    <title><?php wp_title("",true); ?> - <?php bloginfo('name');?></title>
 
     <?php wp_head(); ?>
 
 </head>
 
-<body>
+<body <?php body_class();?>>
 
-<?php require_once('partials/navigation.php'); ?>
+<?php require_once(TEMPLATEPATH . '/partials/navigation.php'); ?>
