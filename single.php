@@ -2,7 +2,7 @@
 
 <div class="mainWrapper">
 
-    <?php require_once(TEMPLATEPATH. '/partials/loop/posts.php'); ?>
+    <?php require_once(TEMPLATEPATH. '/partials/loop/single-post.php'); ?>d
 
 </div><!-- /. mainWrapper -->
 

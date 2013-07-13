@@ -1,5 +1,10 @@
 # Change History
 
+###### 1.1-Beta
+* Nun wird alles Deutsch!
+* Integration von einigen Grundfunktionen für den Start eines Wordpress Projektes
+* Einige Verbesserungen, Vereinfachungen und Optimierungen
+
 ##### 1.0
 * some major performance improvements
 * cleanup the code
